@@ -9,7 +9,7 @@ function CompanyCard() {
       <div className={Style.Leftsection}>
         <img
           src="https://static.naukimg.com/s/0/0/i/role-collection.png"
-          alt="logo"
+          alt="photuuu"
         />
         <p className={Style.Heading}> Discover jobs across popular roles </p>
         <p className={Style.SubHeading}>
