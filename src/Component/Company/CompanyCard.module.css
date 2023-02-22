@@ -1,0 +1,84 @@
+.CompanyCardBackground {
+    margin-top: 8vh;
+    position: relative;
+    height: 55vh;
+    border-radius: 26px 6px 26px 6px;
+    margin-bottom: 26px;
+    background: #fef9f4;
+
+  }
+  
+  .carousel {
+    top: -24px;
+    left: 40rem;
+    position: relative;
+    height:27rem;
+    width: 37rem;
+    background: #ffffff;
+    border: 1px solid #eaf1f5;
+    border-radius: 16px 6px;
+    box-shadow: 0px 4px 10px rgb(0 77 255 / 4%);
+  }
+  .Cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 15rem;
+    height: 7rem;
+    background: #ffffff;
+    border: 1px solid #eaf1f5;
+    border-radius: 16px 6px;
+    margin-top: 1rem;
+  }
+  
+  .CardContent{
+   display: flex;
+    gap :2rem;
+    margin-top: -2vh;
+
+
+   }
+  
+  .Text{
+    font-weight: bolder;
+      font-size: 17px;
+      color: #1b2437;
+  }
+  
+  span{
+    font-weight: normal;
+      font-size: 20px;
+      color: #8292b4;
+  }
+  
+  
+  .Heading {
+    width: 16rem;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #1b2437;
+  }
+  
+  .SubHeading {
+    width: 251px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    color: #8292b4;
+  }
+  
+  .Leftsection {
+    position: absolute;
+    width: 420px;
+    padding-left: 5rem;
+    padding-top: 1rem;
+  }
+  
+  .Img{
+   
+  }

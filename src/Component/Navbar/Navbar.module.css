@@ -1,0 +1,76 @@
+.Main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    background-color: #457eff ;
+}
+.Link{
+
+text-decoration: none;
+font-weight: bold;
+color: white;
+}
+
+.NavbarContent{
+ display: flex;
+ align-items: center;
+ text-decoration:none ;
+ /* justify-content: space-between; */
+ gap:5rem;
+}
+
+.ButtonDiv{
+    display: flex;
+    gap: 3rem;
+}
+.Button{
+    height: 2.5rem;
+    width: 6vw;
+    border: 1px solid #457eff ;
+    background-color:  white;
+    color:  #457eff;
+    text-align: center;
+    border-radius: 20rem;
+
+}
+.Display{
+    background-image: url('https://thumbs.dreamstime.com/b/very-beautiful-baby-soft-blue-pink-paper-abstract-sky-polygonal-shapes-very-beautiful-baby-soft-blue-pink-paper-abstract-sky-217798675.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+   }
+   .Content{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       height: 40vh;
+      
+   }
+   .InputWrapper{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-top: -1.7rem;
+       margin-left: 20rem;
+       width: 50vw;
+       background-color: white;
+   height: 3rem;
+   border: 1px solid;
+   border-radius: 20rem;
+   
+   }
+   .input{
+       height: 2.5rem;
+       width:20vw;
+       font-size: 1.2rem;
+       border-radius: 20rem;
+       text-align: center;
+       border: none;
+   }
+   
+   .input:focus{
+    outline: none;
+   }
+   

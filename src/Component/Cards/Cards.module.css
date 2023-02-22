@@ -1,0 +1,26 @@
+.Card{
+    width: 80%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    gap:1rem;
+    background: #FFFFFF;
+    border: 1px solid #EAF1F5;
+    box-shadow: 0px 3px 6px rgb(0 77 255 / 5%);
+    border-radius: 16px 6px;
+    padding: 0 12px;
+    margin-left: 2vw;
+    margin-top: 4vh;   
+}
+
+  .Card:hover{
+    box-shadow: 0px 8px 20px rgb(0 73 203 / 12%);
+  }
+  
+  .Main{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5vw;
+    margin-bottom: 4vh;
+  }
