@@ -1,12 +1,23 @@
 import React,{useState} from "react";
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Cards from "../Cards/Cards";
 import CompanyCard from "../Company/Company Card";
 import Footer from "../Footer/Footer";
 import Style from './Navbar.module.css'
+import Fetch from "../Fetch/Fetch";
+
 
 export default function Navbar() {
-    const[desegnations , setDesegnations] = useState([])
+    const[desegnations , setDesegnations] = useState('')
+    const[location , setLocation] = useState('')
+     const nav = useNavigate()
+   async function HandleClick({desegnations , location}){
+       const Data = await Fetch({desegnations, location})
+       console.log(Data,'from fetch data and navbar')
+       localStorage.setItem('jobData' , JSON.stringify(Data))
+       nav('/JobList')
+    }
+ 
     return (
         <>
             <div className={Style.Main}>
@@ -30,9 +41,10 @@ export default function Navbar() {
                 </div>
             </div>
             <div className={Style.InputWrapper}>  
-            <input  className={Style.input} placeholder='designations' onChange={(e)=>{ setDesegnations(e.target.value)}}/>
-            <input  className={Style.input} placeholder='Location'/>
-            <button className={Style.Button}>Search</button>
+            <input  className={Style.input} placeholder='designations' onChange={(e)=>{ setDesegnations(e.target.value)}} value={desegnations}/>
+            <input  className={Style.input} placeholder='Location' onChange={(e) => {setLocation(e.target.value) }}
+                value={location} />
+            <button className={Style.Button} onClick={() => {HandleClick({desegnations,location})}}>Search</button>
             </div> 
 
             <Cards/>
