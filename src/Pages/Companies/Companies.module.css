@@ -1,0 +1,30 @@
+.card{
+    
+    background-image: url("https://wallpaperaccess.com/full/1397714.jpg");
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width:100%
+   
+}
+.card1{
+    width:50vw;
+    display: flex;
+    color: white;
+   
+margin-left: 25vw;
+padding: 1.5rem;
+border-radius: 25px 4px;
+box-shadow: 3px 3px 3px 3px black;
+}
+
+.Content{
+    font-display: flex;
+
+}
+.Content span{
+    color: white;
+}
+.card img{
+    border-radius:10px ;
+}

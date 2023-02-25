@@ -4,19 +4,20 @@ import Cards from "../Cards/Cards";
 import CompanyCard from "../Company/Company Card";
 import Footer from "../Footer/Footer";
 import Style from './Navbar.module.css'
-import Fetch from "../Fetch/Fetch";
+import {Fetch} from "../Fetch/Fetch";
 
 
 export default function Navbar() {
     const[desegnations , setDesegnations] = useState('')
     const[location , setLocation] = useState('')
      const nav = useNavigate()
-   async function HandleClick({desegnations , location}){
-       const Data = await Fetch({desegnations, location})
+   async function HandleClick(desegnations ){
+       const Data = await Fetch(desegnations )
        console.log(Data,'from fetch data and navbar')
        localStorage.setItem('jobData' , JSON.stringify(Data))
        nav('/JobList')
     }
+  
  
     return (
         <>
@@ -25,7 +26,7 @@ export default function Navbar() {
                     <img width='50rem' height='50rem' src='https://imgur.com/OtSli90.png' alt="logo" />
                     <Link className={Style.Link} to='/job'>Job</Link>
                     <Link className={Style.Link} to='/companies'>Companies</Link>
-                    <Link className={Style.Link} to='/services'>Services</Link>
+                    
                 </div>
                 <div>
                     <div className={Style.ButtonDiv}>
@@ -41,10 +42,8 @@ export default function Navbar() {
                 </div>
             </div>
             <div className={Style.InputWrapper}>  
-            <input  className={Style.input} placeholder='designations' onChange={(e)=>{ setDesegnations(e.target.value)}} value={desegnations}/>
-            <input  className={Style.input} placeholder='Location' onChange={(e) => {setLocation(e.target.value) }}
-                value={location} />
-            <button className={Style.Button} onClick={() => {HandleClick({desegnations,location})}}>Search</button>
+            <input  className={Style.input} placeholder='Find your dream job now' onChange={(e)=>{ setDesegnations(e.target.value)}} value={desegnations}/>
+            <button className={Style.Button} onClick={() => {HandleClick(desegnations)}}>Search</button>
             </div> 
 
             <Cards/>

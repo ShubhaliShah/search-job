@@ -57,8 +57,8 @@ color: white;
        width: 50vw;
        background-color: white;
    height: 3rem;
-   border: 1px solid;
-   border-radius: 20rem;
+   box-shadow: 3px 3px 3px 3px black;
+   border-radius: 20rem
    
    }
    .input{

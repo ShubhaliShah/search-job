@@ -2,11 +2,12 @@
 .box {
   display: flex;
   flex-direction: column;
-  /* background-color: black; */
+  background-color: black;
   color: white;
   font-family: 'Ubuntu', sans-serif;
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: 15vh;
+  padding: 1.5rem;
 }
 /* .boxownername {
   color: red;
@@ -32,10 +33,13 @@
 .box2 {
   padding: 2rem;
   display: grid;
+  font-size: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-evenly;
   color: rgb(109, 109, 109);
   width: 70vw;
+  height: fit-content;
+  row-gap:0vh ;
 }
 /* .boxIcon {
   font-size: 2rem;
@@ -47,7 +51,7 @@
 } */
 
 .socialLogo {
-  font-size: 3rem;
+  font-size: 2rem;
   display: flex;
   margin-top: 20vh;
   margin-right: 5vw;
@@ -63,3 +67,12 @@
   line-height: 1.7rem;
   margin-top: 2.3rem;
 } */
+.Connect{
+  color: white;
+  font-size: 2rem;
+  width: 25vw;
+  margin-right: -20vw;
+  margin-top: 10vh;
+  font-weight: bold;
+
+}

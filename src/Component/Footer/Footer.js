@@ -10,22 +10,24 @@ export default function Footer() {
         <div className={Style.box}>
             <div className={Style.social}>
                 <div className={Style.box2}>
-                    <h6>Bussiness</h6>
-                    <h6>Careers</h6>
-                    <h6>Terms</h6>
-                    <h6>Employer home</h6>
-                    <h6>Blog</h6>
-                    <h6>Privacy policy</h6>
-                    <h6>Get the app</h6>
-                    <h6>Help and Support</h6>
-                    <h6>Cookie settings</h6>
-                    <h6>About Us</h6>
-                    <h6>Affiliate</h6>
-                    <h6>Sitemap</h6>
-                    <h6>Contact us</h6>
-                    <h6>Investors</h6>
-                    <h6>Accessibilty statement</h6>
+                    <p>Bussiness</p>
+                    <p>Careers</p>
+                    <p>Terms</p>
+                    <p>Employer home</p>
+                    <p>Blog</p>
+                    <p>Privacy policy</p>
+                    <p>Get the app</p>
+                    <p>Help and Support</p>
+                    <p>Cookie settings</p>
+                    <p>About Us</p>
+                    <p>Affiliate</p>
+                    <p>Sitemap</p>
+                    <p>Contact us</p>
+                    <p>Investors</p>
+                    <p>Accessibilty statement</p>
                 </div>
+                     <h4  className={Style.Connect} >Connect With Us</h4>
+               
                     <div className={Style.socialLogo}>
                         <AiOutlineInstagram />
                         <FiYoutube />
@@ -33,6 +35,7 @@ export default function Footer() {
                         <RxTwitterLogo />
                         <AiOutlineLinkedin />
                 </div>
+        
             </div>
             {/* <label className={Style.boxIcon}>
         <BsJournalCode /> Learn - O - Pedia

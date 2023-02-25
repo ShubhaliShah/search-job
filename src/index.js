@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom'
+// import Companies from './Pages/Companies/Companies';
 // import Job from './Pages/Job/Job';
 
 
@@ -13,6 +14,7 @@ root.render(
   <React.StrictMode>
     <App/>
     {/* <Job/> */}
+    {/* <Companies/> */}
   </React.StrictMode>
   </BrowserRouter>
 );
