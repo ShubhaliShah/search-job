@@ -54,9 +54,10 @@
   font-size: 2rem;
   display: flex;
   margin-top: 20vh;
-  margin-right: 5vw;
+  margin-right: 2vw;
   color: rgb(109, 109, 109);
   gap: 2rem;
+  
   
 }
 /* .boxFooter {
@@ -71,8 +72,15 @@
   color: white;
   font-size: 2rem;
   width: 25vw;
-  margin-right: -20vw;
+  margin-right: -24vw;
   margin-top: 10vh;
   font-weight: bold;
 
+}
+.socialMedia{
+
+display: flex;
+height: 30vh;
+border-radius: 10px;
+box-shadow:3px 3px 3px 3px gray ;
 }

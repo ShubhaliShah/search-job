@@ -4,17 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom'
-// import Companies from './Pages/Companies/Companies';
-// import Job from './Pages/Job/Job';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
   <React.StrictMode>
-    <App/>
-    {/* <Job/> */}
-    {/* <Companies/> */}
+   <App/>
   </React.StrictMode>
   </BrowserRouter>
 );

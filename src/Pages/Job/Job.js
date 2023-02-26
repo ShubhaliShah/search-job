@@ -1,44 +1,51 @@
-import React,{useState} from "react";
-// import Navbar from "../../Component/Navbar/Navbar";
-import {Fetch} from "../../Component/Fetch/Fetch";
-
+import React, { useState } from "react";
+import Navbar from "../../Component/Navbar/Navbar";
+import { Fetch } from "../../Component/Fetch/Fetch";
+import Style from './Job.module.css'
 
 
 
 export default function Job() {
 
-  const [search , setSearch] = useState("")
-const [jobList , setJobList] = useState([])
-const captureSearch = (e)=>{
-  setSearch(e.target.value)
-}
+  const [search, setSearch] = useState("")
+  const [jobList, setJobList] = useState([])
+  const captureSearch = (e) => {
+    setSearch(e.target.value)
+  }
 
-async function handleSearch(search){
-  
-  const Data = await Fetch(search)
-  setJobList(Data)
-}
+  async function handleSearch(search) {
+
+    const Data = await Fetch(search)
+    setJobList(Data)
+  }
   return (
-    <div>
-      {/* <Navbar/> */}
-     <h1>Hey user search Job</h1>
-     <input value={search} placeholder="Search Jobs" onChange={captureSearch}/>
-     <button onClick={()=>handleSearch(search,Location)}>Search</button>
-    
- 
-       {jobList.map((x,i)=><div key={i} style={{border : "1px solid red"}}>
-         <h3>Title:{x?.title}</h3>
-         <div style={{display : "flex", alignItem : "center"}}><img width="50px" src={x.company_logo} />{x?.company_name}</div>
-         <p>Location:{x?.candidate_required_location}</p>
-         <p>publication_date{x.publication_date}</p> 
-         <p>Tages:{x.tags.slice(0,5).join(' ')}</p>
-         <p>job-type:{x.job_type}</p>
-       
+    <>
+      <Navbar />
+      <div className={Style.MainBox} >
 
-  
-       </div>)}
-     
 
-    </div>
+        <div className={Style.Box}>
+
+          <input className={Style.Input} value={search} placeholder="Search Jobs" onChange={captureSearch} />
+          <button  className ={Style.Button} onClick={() => handleSearch(search, Location)}>Search</button>
+        </div>
+
+        <div className={Style.CardBox}>
+          {jobList.map((x, i) => <div className={Style.CardsItem}><div className={Style.Card} key={i} >
+            <div className= {Style.ImageDIV} ><img className= {Style.Image} width="50px" src={x.company_logo} /></div>
+
+            <div className={Style.CardContent}>
+            <span>{x?.company_name}</span>
+            <span>Title:{x?.title}</span>
+            <span>Location:{x?.candidate_required_location}</span>
+            <span>Tages:{x.tags.slice(0, 5).join(' ')}</span>
+            <span>job-type:{x.job_type}</span>
+            </div>
+            </div>
+          </div>)}
+        </div>
+
+      </div>
+    </>
   );
 }

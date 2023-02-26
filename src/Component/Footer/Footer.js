@@ -25,15 +25,16 @@ export default function Footer() {
                     <p>Contact us</p>
                     <p>Investors</p>
                     <p>Accessibilty statement</p>
-                </div>
+                </div >
+                <div className={Style.socialMedia}>
                      <h4  className={Style.Connect} >Connect With Us</h4>
-               
                     <div className={Style.socialLogo}>
                         <AiOutlineInstagram />
                         <FiYoutube />
                         <AiOutlineFacebook />
                         <RxTwitterLogo />
                         <AiOutlineLinkedin />
+                        </div>
                 </div>
         
             </div>
@@ -46,9 +47,9 @@ export default function Footer() {
                     Job-search™ Ltd. All rights reserved.
                 </span>
             </div>
-            {/* <h3 className={Style.boxDesigned}>
-        Designed by <span className={Style.boxownername}> Abhishek</span>😎
-      </h3> */}
+            <h3 className={Style.boxDesigned}>
+        Designed by <span className={Style.boxownername}>Shubhali</span>😎
+      </h3>
         </div>
     );
 }

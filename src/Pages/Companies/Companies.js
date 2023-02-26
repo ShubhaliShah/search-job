@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../../Component/Navbar/Navbar";
 import Style from './Companies.module.css'
 import { Cards } from './ConstantData'
 export default function Companies() {
@@ -7,7 +8,8 @@ export default function Companies() {
   console.log(Data, 'Line 7 ');
   return (
 
-
+      <div  className={Style.Main}>
+        <Navbar/>   
     <div className={Style.card} >
       {Data.map((x) =>
 
@@ -27,6 +29,7 @@ export default function Companies() {
       }
 
     </div>
+    </div> 
 
   )
 

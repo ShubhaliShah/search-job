@@ -1,0 +1,111 @@
+.MainBox{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.Box{
+display: flex;
+gap:2rem;
+justify-content: center;
+margin-top: 5rem;
+}
+
+.Input{
+    width: 30rem;
+    height: 3rem;
+    border-radius: 0.6rem;
+    font-size: 1.5rem;
+    font-family: Inter,Roboto,sans-serif,Helvetica;
+    color: rgb(95, 93, 93);
+    text-align: center;
+    border: 2px solid rgb(167, 166, 166);
+    outline: none;
+    box-shadow: 0px 0px 5px 2px rgb(158, 157, 157);
+}
+
+.Button{
+    width: 8rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    font-family: Inter,Roboto,sans-serif,Helvetica;
+    background-color: rgb(116, 241, 116);
+    color: whitesmoke;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+}
+
+ .Button:hover{
+    box-shadow: 0px 0px 7px 2px rgb(139, 243, 147); 
+    border: 2px solid  rgb(116, 241, 116);
+ }
+
+ .Button:active{
+    box-shadow: 0 5px gray;
+    transform: translate(4px);
+ }
+
+ .CardBox{
+    display: flex;
+    flex-direction: column;
+   margin-left: 15rem;
+   margin-top: 3rem;
+ 
+    gap: 2rem;
+ }
+
+ .Card{
+    border: 1px solid;
+    display: flex;
+    width: 50rem;
+    height: 18rem;
+    border-radius: 1.5rem;
+    background-color: white;
+ }
+ .CardContent{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    text-align: left;
+    padding: 1rem 1rem 1rem 3rem ;
+ }
+
+ .Image{
+    height:10rem ;
+    width:10rem;
+    transition: transform .2s;
+   
+ }
+ .Image:hover{
+    transform: scale(1.1);
+ }
+ 
+ .ImageDIV{
+    height: 14rem;
+    width: 18rem;
+    margin-left:2rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 3px 3px gray;
+   
+ }
+ .CardsItem{
+    width: 52rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #457eff ;
+ }
+
+ .social{
+    border:1px solid white;
+
+ }
