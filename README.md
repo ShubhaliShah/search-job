@@ -1,5 +1,5 @@
 Project Title
-A brief description of what this project does and who it's for This project is based on the job search engine, which will help you to find your dream job, which will satisfy all your requirments.
+This project is based on the job search engine, which will help you to find your dream job, which will satisfy all your requirments.
 
 🚀 About Me
 I'm a frontend developer trainee at function Up...
